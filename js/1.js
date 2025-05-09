@@ -1,3 +1,8 @@
+// Take input
+let master=prompt("Enter ur name:");
+console.log("My name is :"+master); //web browser
+
+console.log(`${3+3}=6`);
 // download es6 extension in vs code ,then type clg, it will automatically console.log(object)
 console.log("hello")
 console.log(typeof(1)); 
@@ -132,3 +137,57 @@ let variable5=String(variable4)
 console.log(variable5);
 console.log(typeof(variable5));
 console.log(variable4.toString());
+
+const ant = [1, 6, 5, 345, 5, 4, 6, 78];
+console.log(ant.sort((a, b) => a - b));  // Ascending numeric sort
+console.log(ant.sort((a, b) => b - a));  // Descending numeric sort
+
+let vai={
+    good:"morning",
+    bad:"evening", 
+    10:"ten",
+    location:["planet","earth"]
+};
+vai.HELLO="sweet";
+vai.beauty="kriti sanon"
+
+// console.log(object);
+console.log(vai);
+delete vai.beauty
+console.log(vai);
+console.log(Object.keys(vai).length);
+console.log(vai.bad);
+console.log(vai[10]);
+let arr=[1,2,3,4];
+console.log(arr.length);
+console.log(typeof(arr));
+
+let car={
+    type:"HE",
+    model:"kuv 100",
+    colour:"pink"
+}
+console.log(car);
+console.log(typeof(car));
+car.type="Toyato"
+console.log(car);
+car.wheels="black"
+console.log(car);
+
+function greet(num,name){
+    console.log("Nanna jeevake",num);
+    console.log(`One and only star ,super star ${name}`);
+}
+greet(10,"Vijay Joseph")
+
+{
+    function myFunction(num1, num2) {
+        console.log(num1 * num2);
+        return num1 * num2; // Added return statement to make the function meaningful
+    }
+
+    let b = myFunction(30, 40);
+    let c = myFunction(50, 60);
+}
+
+
