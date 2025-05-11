@@ -312,3 +312,120 @@ console.log();
 
 
 }
+{   //find()
+    const mobile=[
+        {poco:1, snap:100, no:1},
+        {apple:2, insta:200,no:2},
+        {vivo:3, whatsup:300,no:3},
+        {redmi:4, software:400,no:4},
+        {redmi:4, software:400,no:4}
+    ]
+    let om=mobile.find(hel=>hel.software==400)
+    console.log(om);
+    console.log();
+    let om1=mobile.filter(hel=>hel.software==400)
+    console.log(om1);
+
+}
+{
+    const ages=[3,10,18,20]
+    function adult(ages){
+        return ages>=18
+    }
+    let index=ages.filter(adult)
+    console.log(index);
+}
+{
+    // every() is a function that checks every element in array satisfies, even if 1 doesn't satisfy ,it returns false
+    const god=["laxmi","saraswati","mookambika","ganesh","kali"]
+    let sorry=god.every(hel=>hel.length>=6)
+    console.log(sorry);
+
+}
+{   
+    // some() function returns true ,even if 1 member of that array satisfies the condition
+    const god=["laxmi","saraswati","mookambika","ganesh","kali"]
+    let sorry=god.some(hel=>hel.length>=6)
+    console.log(sorry);
+}
+{
+    const mobile=[
+        {poco:1, snap:100, no:1},
+        {apple:2, insta:200,no:2},
+        {vivo:3, whatsup:300,no:3},
+        {redmi:4, software:400,no:4},
+        {redmi:4, software:400,no:4}
+    ]
+    let god=mobile.every(people=>people.software>=300)
+    console.log(god);
+    console.log();
+    let god1=mobile.some(people=>people.software>=300)
+    console.log(god1);
+}
+{
+    // reduce() reduces the array to single value
+    const num=[1,2,3,4,5,6]
+    let sum1=num.reduce((accu, add1)=>{
+    console.log(accu);
+    console.log(add1) ;return accu+add1},0)
+    
+    console.log(sum1);
+}
+{
+    // reduce
+    const ages=[
+        {name:"shrinidhi",age: 500},
+        {name:"vijay",age:700},
+        {name:"great",age:900},
+        {name:"Alexander",age:1200}
+
+    ]
+    let om=ages.reduce((p,c)=>c.age>p?c.age:p)
+    console.log(om);
+    // calculateproduct() function
+    const dooper=[2,3,4,5]
+    function calculateProduct(dooper){
+        return dooper.reduce((p,c)=>p*c)
+    }
+    let god=calculateProduct(dooper)
+    console.log(god);
+}
+// Map():-is a function to make key-value pair
+{
+    let one=new Map();
+    let keyone="god";
+    let keytwo="devil";
+    let keythree={daa:"dbms"};
+    let keyfour=function gol(){
+        console.log("i am god");
+    };
+    let keyfive=function(){
+        console.log("And im devil");
+    };
+    one.set(keyone,"lorem10")
+    one.set(keytwo,"nanavanalla")
+    one.set(keythree,"billionaires")
+    console.log(one);
+    console.log(one.size);
+    console.log(one.keys());
+    console.log(one.values()); 
+    console.log(one.delete(keytwo));//returns true if it is existed in key:value pair
+    for(let[key,value] of one){
+        console.log(key,value);
+    }
+    for(let key of one.keys()){
+        console.log(key);
+    }
+    for(let value of one.values()){
+        console.log(value);
+    }
+}
+{
+    let first=new Map();
+    first.set("a",1);
+    first.set("b",2);
+    first.set("c",3);
+    console.log(first.size);
+    console.log(first.delete("b"));
+    console.log(first.get("a"));
+}
